@@ -54,7 +54,7 @@ background: rgba(0, 0, 0, 0.6);
     left: 0;
 }
 #masthead {
-    height: 280px;
+    height: 60px;
     background-image: url("../images/internet_humor.png");
     background-size: cover;
     background-position: center;
