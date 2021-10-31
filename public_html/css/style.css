@@ -1,5 +1,9 @@
 #wrapper {
     width: 960px;
+    font-size: 19px;
+    line-height: 32px;
+    font-family: sans-serif;
+
 }
 #menu {
     height: 120px;
@@ -28,19 +32,50 @@
     margin: 0;
     padding: 0;
 }
-#masthead {
-    height: 74px;
-    background-image: url("../images/img_girl.png");
+.mastheadTopMargin {
+    top-margin: 20px
+}
+#masthead_landing {
+    height: 280px;
+    background-image: url("../images/Internet_humor.png");
     background-size: cover;
     background-position: center;
-    margin-bottom: ;
+    margin-top: 45px;
+    margin-bottom: 60px;
+    clear: both;
+}
+#hero_div {
+background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#masthead {
+    height: 280px;
+    background-image: url("../images/internet_humor.png");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 45px;
+
 }
 #menu li {
     display: inline;
 }
 #side_photo {
     width: 320px;
+    position: fixed;
 }
 .text_center {
     text-align: center;
+}
+.callout {
+    width: 320px;
+    height: 196px;
+}
+
+.position_absolute {
+    position: absolute;
 }
