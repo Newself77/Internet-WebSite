@@ -47,12 +47,15 @@
 
 #masthead_landing {
     height: 280px;
-    background-image: url("../images/Internet_humor.png");
     background-size: cover;
     background-position: center;
     margin-top: 45px;
     margin-bottom: 60px;
     clear: both;
+
+}
+#h1{
+    float: left;
 }
 
 #hero_div {
@@ -99,7 +102,7 @@
     padding:0;
     position: static;
     float: right;
-    height: 30px;
+    height: 15px;
 
 
 }
