@@ -3,7 +3,6 @@
     font-size: 19px;
     line-height: 32px;
     font-family: sans-serif;
-
 }
 #menu {
     height: 120px;
@@ -32,8 +31,10 @@
     margin: 0;
     padding: 0;
 }
-.mastheadTopMargin {
-    top-margin: 20px
+
+.title a:hover {
+    text-decoration: none;
+    color:  black;
 }
 #masthead_landing {
     height: 280px;
@@ -75,7 +76,21 @@ background: rgba(0, 0, 0, 0.6);
     width: 320px;
     height: 196px;
 }
+.footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0px;
+    position: static;
+    float: right;
+    bottom: 0px;
+
+}
 
 .position_absolute {
     position: absolute;
+}
+hr {
+    margin-bottom: 24px;
+    margin-top: 24px;
 }
