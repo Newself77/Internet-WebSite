@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style4colorpro.css">
+
+    <style>
+        body {
+            background-image: url("images/python_images.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+<div id="wrapper" class="margin_left_right_auto">
+    <div id="header">
+        <div id="logo" class="gr_width_small float_left">
+            <a href="index.html"> <img src="images/Motor_city.png" height="100" width="100" alt="DRC"/></a>
+
+        </div>
+        <div id="menu" class="gr_width_large float_left">
+            <menu class="float_right reset_margin_padding">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="projects.html">Project</a></li>
+                <li><a href="article.html">Information</a></li>
+                <li><a href="pylintandglossary.html">Pylint/Glossary</a></li>
+                <li><a href="pytest.html">Tuturial and Testing</a></li>
+                <li><a href="object.html">Object</a></li>
+                <li><a href="about.html">About</a></li>
+            </menu>
+
+        </div>
+        <div id="masthead" class="clear_float mastheadTopMargi ">
+
+        </div>
+    </div>
+    <div id="main">
+        <div id="content" class="float_left gr_width_large">
+            <div id="article_title">
+                <h1 class="reset_margin_padding">Tuturial Py-Testing </h1>
+            </div>
+            <div id="article_body">
+                <p class="body">
+                    Tutorial Py Testing
+                    You made it this far as were begun to explore the triple AAA testing in python. We must identify each A in the testing. The frame works is this.
+                    Arrange inputs and targets. Arrange steps should set up the test case. Does the test require any objects or special settings? Does it need to prep a database? Does it need to log into a web app? Handle all these operations at the start of the test.
+                    Act on the target behavior. Act steps should cover the main thing to be tested. This could be calling a function or method, calling a REST API, or interacting with a web page. Keep actions focused on the target behavior.
+                    Assert expected outcomes. Act steps should elicit some sort of response. Assert steps verify the goodness or badness of that response. Sometimes, assertions are as simple as checking numeric or string values. Other times, they may require checking multiple facets of a system. Assertions will ultimately determine if the test passes or fails.
+                    Do not just assume everything will go according to plan. Those who write unit tests. With Python's built-in unit test module, you can easily write code to test your software. This will give you a piece of mind which I lose. All too many programmers should trust but verify. With unit testing. Suppose you ask an engineer to write a function that computes the area of a circle. They get excited because it sounds like an easy task. The engineer creates a file called circles dot py and gets to work first the import the constant Pi from the math module. Next, they define the function. And with a single line, they compute and return the area. Finally, they give us the function to test, then struck back to their workstation. Let's scroll up and look. I do not see a docstring, so I assume this function will work with any input. Let's test the values to zero negative three, 2 + 5, J true, and the string radius. Don't forget that JS, the square root of negative one in Python. For each radius, I will display this formatted message. We loop over the list of radii. Compute the area. Then print the test message to format the message called the format method and passing the values for the two named fields. Run the area is correct for a circle of radius 2. And the area of a circle with radius zero is indeed 0. The function computes the area of a circle with a negative radius. The function returns a complex area for a circle with a complex radius. The area of a circle with radius true is π. Thankfully, the function gives an error when you try to find the area of a circle with a string as a radius. My conclusion is that the function is.
+                    Looking at this scenario, we have disappointment. Rather than simply criticizing the engineers work, we will now write unit tests to check that the function works properly. The engineer will then be able to test their code before submitting it for review. The function is in a file called circles dot PY. You typically put the unit tests in a separate file. There are two common conventions for naming the test module. The first is to call it test_circles dot PY where you put a test_before the name of the module you were testing. The second is to name it circles_test dot PY. Where you put an_test after the name of the module. In the first case, all the test modules will be grouped together. In the second case, each module appears next to its test class in your file system. It is up to you or your team to choose which naming convention to use. By the way, some people will put tests in a separate folder entirely, but for simplicity we will keep all classes under unit tests in the same folder. And for naming we will follow the first convention. Create a file called test_circles dot PY. When writing unit tests, the first thing to do is import the unit test module. If we want to test the circle area function, then we must first import it. And to check the answers, we will also need to import the number Pi. Next, create a class that is a subclass of the test case class. In the unit test module. We will call our class test circle area. A more descriptive name I cannot imagine. We will write our test methods inside this class. Each test method must start with the word test. The first will be test_area. Here we will check that the function correctly computes the areas of several circles. To do this, we will call the assert almost equal method. The first value will be the output of the circle area function and the second value will be the correct answer. The Python Unit test framework will compare these two values and if they are correct to 7 decimal places, it will assume they are equal. That is also checked. The function works for a circle of radius zero and a circle of radius 2.1. If any of these comparisons fail, then Python will register that the test area method failed to run this unit test. Open a shell and go to the directory containing both the circles module and test circles module. To run the unit tests, enter Python Dash M unit test and then the name of the test module. Test circles the Dash M option instructs Python to run the unit test module as a script. Runs we see the test ran and everything is OK. By the way, you can also simply run Python Dash M. Unit test. Python will then use a process called test discovery where it will search for tests and run them. A handy shortcut indeed. Let us now test the function to see if it handles improper inputs correctly. We will write a new test method called test values to see if the function raises a value error when the input is a negative number. To check that an exception is raised, you use. The assert raises method. The first argument is the exception class that should be raised. The second argument is a function. And the remaining inputs are arguments to the function. In this case, if we try to compute the area of a circle with radius negative 2, the function should raise a value error. Now return to the console and run the unit tests. This time we get a screenful. Let us count the ways Python indicates there is a problem. There is an effort fail the word fail in all caps. The word failed and at the bottom the number of failures. You've made your point Python. As we saw earlier, a value error was not raised when the input was negative. Let us return to the circles module. As the unit tests indicated, if the radius is negative, we need to raise a value error. So before computing the area, we check to see if it is negative. If so, raise a value error with a helpful error message. If not, then compute and return the area. Return to the console and run the unit tests once more OK. Just OK. Python is stingy with praise. So far we have seen two assert methods assert almost equal and assert raises. Python has many more methods for unit testing. There are dozens and dozens of methods. One way to learn about a particular assert method is by looking at the help text in interactive mode. For example, suppose you want to learn more about the assert set equal method. To see the help text, import the UNITTEST module. Then use the help function on the method. We first enter the module unit test, then the class test case. Then the method name asserts that equal. Python gives us a nice, detailed description of this assert method. Let us return to our example since we have unfinished business. We also want to make sure the function raises a type error whenever the input is not a real number, so we will add a third test method to our unit test. This test will check that a type error is raised when the input is not a real number. Let us check that an exception is raised when the input is a complex number. Oblivion. Or a string? If we run the unit tests again, we are alerted to our failures. We can fix this by returning to the circle area function. To address this problem, we first check the type of the input. If the type is not an integer or a float, then we will raise a type error. The function is looking much better. Now run the unit tests once more. Everything is OK. Unit tests saved the day. Change is one constant in programming languages. Evolve engineers may come and go, but if you use unit tests then you will be more confident about upgrading and improving existing code without causing problems for others. So do not fear tests, embrace them. Run test every time you make a change.
+                </p>
+
+            </div>
+        </div>
+        <div id="sidebar" class="float_left gr_width_small">
+            <div id="side_photo" class="margin_left_right_auto">
+
+                <img src="images/pythong.png" height="400" width="369" alt="Began"/>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer" class="clear_float text_center float_right">
+        Gerald Williams &#169 All rights reserved 2021
+        <img src="images/valid-html20.png" height="31" width="88" alt="Validate Erros"/></div>
+
+
+</div>
+
+
+</body>
+</html>
